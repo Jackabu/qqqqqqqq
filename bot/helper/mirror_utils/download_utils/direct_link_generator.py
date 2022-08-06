@@ -101,7 +101,7 @@ def zippy_share(url: str) -> str:
             raise DirectDownloadLinkException("ERROR: Failed to Get Direct Link")
     dl_url = f"{base_url}/{uri1}/{int(mtk)}/{uri2}"
     return dl_url
-
+  
 def yandex_disk(url: str) -> str:
     """ Yandex.Disk direct link generator
     Based on https://github.com/wldhx/yadisk-direct """
